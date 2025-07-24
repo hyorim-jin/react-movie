@@ -43,12 +43,8 @@
       "last 1 safari version"
     ]
   },
-<<<<<<< HEAD
-  "homepage": "https://hyorim-jin.github.io/react-movie"
-=======
   "homepage": "https://hyorim-jin.github.io/react-movie",
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "devDependencies": {
+      "gh-pages": "^6.3.0"
   }
->>>>>>> f6feaa98cd102128ec0e7f821855e3810ae8d48b
 }
