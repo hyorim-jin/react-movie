@@ -21,7 +21,11 @@ function Detail() {
 	return (
 		<div className="container">
 			{loading ? (
-				<h1>Loading...</h1>
+				<div className="loader">
+					<span className="bar"></span>
+					<span className="bar"></span>
+					<span className="bar"></span>
+				</div>
 			) : (
 				<div>
 					<div className="back-btn">
@@ -33,13 +37,13 @@ function Detail() {
 						</div>
 						<div className="movie-detail-cont">
 							<h2 className="title">{detail.title}</h2>
-							<ul>
+							<ul className="list">
 								<li>rating: {detail.rating}</li>
 								<li>runtime: {detail.runtime}</li>
 								<li>year: {detail.year}</li>
 								<li>genres: {detail.genres?.join(", ")}</li>
 							</ul>
-							<div>{detail.description_intro}</div>
+							<div className="desc">{detail.description_intro}</div>
 						</div>
 					</div>
 				</div>

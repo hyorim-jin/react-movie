@@ -19,7 +19,11 @@ function Home() {
 	return (
 		<div className="container">
 			{loading ? (
-				<h1>Loading...</h1>
+				<div className="loader">
+					<span className="bar"></span>
+					<span className="bar"></span>
+					<span className="bar"></span>
+				</div>
 			) : (
 				<div className="movie-box">
 					{movies.map((movie) => (
