@@ -12,4 +12,5 @@
 }
 .movie_item :is(.summary, .genres) {
 	display: none;
+	color: #eee;
 }
