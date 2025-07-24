@@ -1,0 +1,5 @@
+.movie_box {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px 1%;
+}

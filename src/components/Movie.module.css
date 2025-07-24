@@ -1,0 +1,15 @@
+.movie_item {
+	flex: 0 0 calc((100% - 4%) / 5);
+}
+.movie_item .img {
+	width: 100%;
+	border-radius: 10px;
+}
+.movie_item .title {
+	font-size: 15px;
+	font-weight: normal;
+	text-align: center;
+}
+.movie_item :is(.summary, .genres) {
+	display: none;
+}
