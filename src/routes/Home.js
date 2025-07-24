@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import Movie from "../components/Movie";
+import styles from "./Home.module.css";
+import "../style.css"
 
 function Home() {
 	const [loading, setLoading] = useState(true);
@@ -25,7 +27,7 @@ function Home() {
 					<span className="bar"></span>
 				</div>
 			) : (
-				<div className="movie-box">
+				<div className={styles.movie_box}>
 					{movies.map((movie) => (
 						<Movie
 							key={movie.id}

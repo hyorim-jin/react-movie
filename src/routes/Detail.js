@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+import styles from "./Detail.module.css";
+import "../style.css"
 
 function Detail() {
 	const [loading, setLoading] = useState(true);
@@ -28,22 +30,22 @@ function Detail() {
 				</div>
 			) : (
 				<div>
-					<div className="back-btn">
+					<div className={styles.back_btn}>
 						<Link to="/">←</Link>
 					</div>
-					<div className="movie-detail">
-						<div className="movie-detail-img">
+					<div className={styles.movie_detail}>
+						<div className={styles.movie_detail_img}>
 							<img src={detail.large_cover_image} alt={detail.title} />
 						</div>
-						<div className="movie-detail-cont">
-							<h2 className="title">{detail.title}</h2>
-							<ul className="list">
+						<div className={styles.movie_detail_cont}>
+							<h2 className={styles.title}>{detail.title}</h2>
+							<ul className={styles.list}>
 								<li>rating: {detail.rating}</li>
 								<li>runtime: {detail.runtime}</li>
 								<li>year: {detail.year}</li>
 								<li>genres: {detail.genres?.join(", ")}</li>
 							</ul>
-							<div className="desc">{detail.description_intro}</div>
+							<div className={styles.desc}>{detail.description_intro}</div>
 						</div>
 					</div>
 				</div>
